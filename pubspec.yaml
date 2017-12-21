@@ -1,0 +1,25 @@
+name: jaguar_http_cli
+description: An Http Api generator inspired by Retrofit for Dart.
+version: 0.0.1
+authors:
+- Hadrien Lejard <hadrien.lejard@gmail.com>
+homepage: http://jaguar-dart.github.io
+
+environment:
+  sdk: '>=1.20.1 <2.0.0'
+
+executables:
+  jaguar_http:
+
+dependencies:
+  jaguar_http:
+    git: "git@github.com:winterDroid/jaguar_http.git"
+  jaguar_serializer_cli: "^0.5.2"
+  source_gen: "^0.6.1"
+  code_builder: "^1.0.0"
+
+dev_dependencies:
+  test: ^0.12.0
+
+jaguar_http:
+  - example/example.dart
