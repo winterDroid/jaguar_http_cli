@@ -50,7 +50,7 @@ ReferenceBuilder get kRawResponseBodyRef => reference("$kRawResponse.$kBody");
 
 ReferenceBuilder get kResponseSuccessfulRef => reference(kResponseSuccessful);
 
-TypeBuilder get kHttpClientType => new TypeBuilder("Client");
+TypeBuilder get kJsonClientType => new TypeBuilder("JsonClient");
 
 TypeBuilder get kStringType => new TypeBuilder("String");
 

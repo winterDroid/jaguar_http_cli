@@ -80,7 +80,7 @@ class JaguarHttpGenerator extends GeneratorForAnnotation<JaguarHttp> {
   _buildConstructor(ClassBuilder clazz) {
     clazz.addConstructor(new ConstructorBuilder(
         invokeSuper: [kClientRef, kBaseUrlRef, kHeadersRef, kSerializersRef])
-      ..addNamed(new ParameterBuilder(kClient, type: kHttpClientType))
+      ..addNamed(new ParameterBuilder(kClient, type: kJsonClientType))
       ..addNamed(new ParameterBuilder(kBaseUrl, type: kStringType))
       ..addNamed(new ParameterBuilder(kHeaders, type: kMapType))
       ..addNamed(new ParameterBuilder(kSerializers, type: kSerializerType)));

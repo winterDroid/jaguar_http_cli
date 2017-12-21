@@ -8,7 +8,11 @@ part of jaguar_http.example;
 // **************************************************************************
 
 class Api extends JaguarApiDefinition with ApiDefinition {
-  Api({Client client, String baseUrl, Map headers, SerializerRepo serializers})
+  Api(
+      {JsonClient client,
+      String baseUrl,
+      Map headers,
+      SerializerRepo serializers})
       : super(client, baseUrl, headers, serializers);
   Future<JaguarResponse<User>> getUserById(String id) async {
     final url = '$baseUrl/users/:id';
